@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1385520904&color=%23141450&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/808shally" title="Shally Rehal" target="_blank" style="color: #cccccc; text-decoration: none;">Shally Rehal</a> · <a href="https://soundcloud.com/808shally/euphoria-shally-rehal" title="EUPHORIA - Shally Rehal &amp; KULTARGOTBOUNCE" target="_blank" style="color: #cccccc; text-decoration: none;">EUPHORIA - Shally Rehal &amp; KULTARGOTBOUNCE</a></div>
+    <center><img src="27.jpg" alt="Italian Trulli"width="400" height="600"></center>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>move button</title>
+    <style>
+      body{
+        background-color: black;
+      }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        .btn-yes {
+            margin-left: -50px;
+            margin-right: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(43, 226, 226);
+            border: none;
+            width: 60px;
+        }
+
+        .btn-no {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(39, 223, 223);
+            border: none;
+            width: 60px;
+            position: absolute;
+        }
+
+        .button {
+            margin-top: 50px;
+        }
+
+        .btn-yes:hover {
+            box-shadow: 0 0 5px #45f3ff,
+                0 0 25px #45f3ff,
+                0 0 50px #45f3ff,
+                0 0 100px #45f3ff
+        }
+
+        .btn-no:hover {
+            box-shadow: 0 0 5px #45f3ff,
+                0 0 25px #45f3ff,
+                0 0 50px #45f3ff,
+                0 0 100px #45f3ff
+        }
+
+        .container img {
+            width: 150px;
+            border-radius: 8px;
+        }
+        h1{
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Heyy Can I ask u for a Friendly Date ?</h1>
+        <img src="" alt="">
+        <div class="button">
+            <button class="btn-yes" onclick="whyNot()">Yes </button>
+            <button class="btn-no">No</button>
+            <br>
+            <br>
+            <br>
+
+            
+        </div>
+    </div>
+
+    <script>
+
+        function whyNot() {
+            alert("Hope krda  je tusi ethe tk agye tah mei thonu thora jeha tah special feel karvaya hove😇😇and haan please answer jaroor dseyo TBH I know it will be No only but thode toh naa Sunan da mauka millju🤍🤍 and haan koi excuse na deyo please actually I don't like excuses te gussa aunda apne te firr hope u understand✌🏻✌🏻and  sch last ehje hor vi vdia vdia concept dekhn lai YUVI naal dosti bnaye rkho😅....and sch likhna tah hor vi chaunda but hje lai chlo TATA.. GOOD NIGHT and Take Care🌟💜 Thoda apna friendly neighborhood MITR YUVI signing off Forever 👋🏻👋🏻...;")
+        }
+
+        let n = document.querySelector('.btn-no')
+        n.addEventListener('mouseover', movebtn)
+
+        function movebtn() {
+            const i = Math.floor(Math.random() * 500) + 1;
+            const j = Math.floor(Math.random() * 500) + 1;
+
+            n.style.left = i + 'px';
+            n.style.top = j + 'px';
+
+
+        }
+    </script>
+
+</body>
+
+</html>
